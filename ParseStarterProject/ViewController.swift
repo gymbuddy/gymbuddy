@@ -21,6 +21,7 @@ class ViewController: UIViewController {
                 if let user = user {
                     if let interestedInIntermediate = user["interestedInIntermediate"] {
                         self.performSegueWithIdentifier("logUserIn", sender: self)
+                        //self.performSegueWithIdentifier("showSignInScreen", sender: self)
                     } else {
                         self.performSegueWithIdentifier("showSigninScreen", sender: self)
                     }
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
         if let username = PFUser.currentUser()?.username {
             if let interestedInIntermediate = PFUser.currentUser()?["interestedInIntermediate"] {
                 self.performSegueWithIdentifier("logUserIn", sender: self)
+                //self.performSegueWithIdentifier("showSignInScreen", sender: self)
             } else {
                 self.performSegueWithIdentifier("showSigninScreen", sender: self)
             }
