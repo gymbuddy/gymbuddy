@@ -1,3 +1,4 @@
+
 import UIKit
 import Parse
 
@@ -5,19 +6,15 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUp(sender: AnyObject) {
         
-        PFUser.currentUser()?["interestedInFemale"] = interestedInFemale.on
+        PFUser.currentUser()?["interestedInIntermediate"] = interestedInIntermediate.on
         try! PFUser.currentUser()?.save()
     }
 
     @IBOutlet var userImage: UIImageView!
     
-    @IBOutlet var interestedInFemale: UISwitch!
     
-    @IBAction func logOut(sender: AnyObject) {
-        PFUser.logOut()
-        performSegueWithIdentifier("logOut", sender: self)
-        
-    }
+    @IBOutlet var interestedInIntermediate: UISwitch!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

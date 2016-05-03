@@ -1,3 +1,4 @@
+
 import UIKit
 import Parse
 import FBSDKCoreKit
@@ -10,33 +11,47 @@ class ViewController: UIViewController {
     
         let permissions = ["public_profile", "email"]
         
-        PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions, block: { (user: PFUser?, error: NSError?) -> Void in
+        PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions, block: {
             
-            if let user = user {
-                if user.isNew {
-                    print("User signed up and logged in through Facebook!")
-                } else {
-                    print("User logged in through Facebook!")
-                    if let username = PFUser.currentUser()?.username {
-                        self.performSegueWithIdentifier("showSignInScreen", sender: self)
+            (user: PFUser?, error: NSError?) -> Void in
+            
+            if let error = error {
+                print(error)
+            } else {
+                if let user = user {
+                    if let interestedInIntermediate = user["interestedInIntermediate"] {
+                        self.performSegueWithIdentifier("logUserIn", sender: self)
+                    } else {
+                        self.performSegueWithIdentifier("showSigninScreen", sender: self)
                     }
                 }
-            } else {
-                print("Uh oh. The user cancelled the Facebook login.")
             }
         })
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
     
     override func viewDidAppear(animated: Bool) {
         if let username = PFUser.currentUser()?.username {
-            performSegueWithIdentifier("showSignInScreen", sender: self)
+            if let interestedInIntermediate = PFUser.currentUser()?["interestedInIntermediate"] {
+                self.performSegueWithIdentifier("logUserIn", sender: self)
+            } else {
+                self.performSegueWithIdentifier("showSigninScreen", sender: self)
+            }
         }
     }
-
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }
+

@@ -15,6 +15,7 @@
 		81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81781A49E0DB00E65899 /* AudioToolbox.framework */; };
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
+		D000ED631CD8D81300FFEB62 /* SwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000ED621CD8D81300FFEB62 /* SwipingViewController.swift */; };
 		D0CC3B771CD8A9B900B9DF6F /* Unused Code in Resources */ = {isa = PBXBuildFile; fileRef = D0CC3B761CD8A9B900B9DF6F /* Unused Code */; };
 		D0CC3B7A1CD8ABC500B9DF6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		D0CC3B7C1CD8AD8A00B9DF6F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0CC3B7B1CD8AD8A00B9DF6F /* Media.xcassets */; };
@@ -41,6 +42,7 @@
 		81BA81781A49E0DB00E65899 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		D000ED621CD8D81300FFEB62 /* SwipingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingViewController.swift; sourceTree = "<group>"; };
 		D0CC3B761CD8A9B900B9DF6F /* Unused Code */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Unused Code"; sourceTree = "<group>"; };
 		D0CC3B7B1CD8AD8A00B9DF6F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../Desktop/ffs/Media.xcassets; sourceTree = "<group>"; };
 		D0E6E1B81CD630A9005526AF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				D0E6E1DA1CD6BFCE005526AF /* SignUpViewController.swift */,
+				D000ED621CD8D81300FFEB62 /* SwipingViewController.swift */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
 				D0E6E1CD1CD63F20005526AF /* ParseStarterProject-Swift-Bridging-Header.h */,
 				D0E6E1D21CD6B867005526AF /* bikeman.png */,
@@ -177,6 +180,7 @@
 				TargetAttributes = {
 					81BA81441A49DA1800E65899 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Q264QC2QS8;
 					};
 				};
 			};
@@ -222,6 +226,7 @@
 			files = (
 				D0E6E1DB1CD6BFCE005526AF /* SignUpViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
+				D000ED631CD8D81300FFEB62 /* SwipingViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +330,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -334,6 +343,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gymbuddy;
 				PRODUCT_NAME = Gymbuddy;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/brandonhardy/Documents/gymbuddy/ParseStarterProject/ParseStarterProject-Swift-Bridging-Header.h";
 			};
 			name = Debug;
@@ -343,6 +353,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -352,6 +366,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gymbuddy;
 				PRODUCT_NAME = Gymbuddy;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/brandonhardy/Documents/gymbuddy/ParseStarterProject/ParseStarterProject-Swift-Bridging-Header.h";
 			};
 			name = Release;
