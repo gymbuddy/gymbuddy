@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gymbuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -66,7 +66,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="Cp3-9f-t8D">
             <objects>
-                <viewController id="b6C-3w-qPb" customClass="SignUpViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b6C-3w-qPb" customClass="SignUpViewController" customModule="Gymbuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yFS-gJ-WKL"/>
                         <viewControllerLayoutGuide type="bottom" id="aAe-1O-tYK"/>

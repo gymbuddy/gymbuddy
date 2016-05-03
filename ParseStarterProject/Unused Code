@@ -1,0 +1,110 @@
+
+//      CODE FOR MANUALLY ADDING USERS - NOT NEEDED
+//
+//        let urlArray = ["https://itfinspiringwomen.files.wordpress.com/2014/03/scooby-doo-tv-09.jpg", "http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=44643840"]
+//
+//        var counter = 1
+//
+//        for url in urlArray {
+//            let nsURL = NSURL(string: url)!
+//
+//            if let data = NSData(contentsOfURL: nsURL) {
+//                self.userImage.image = UIImage(data: data)
+//                let imageFile:PFFile = PFFile(data: data)!
+//
+//                var user:PFUser = PFUser()
+//
+//                var username = "user\(counter)"
+//
+//                user.username = username
+//                user.password = "pass"
+//                user["image"] = imageFile
+//                user["interestedInWomen"] = false
+//                user["gener"] = "female"
+//
+//                counter += 1
+//
+//                do {
+//                    try user.signUp()
+//                } catch let ex {
+//                    print(ex)
+//                }
+//
+//                do {
+//                    try PFUser.currentUser()?.save()
+//                } catch let ex {
+//                    print(ex)
+//                }
+//        }
+//    }
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+DRAGGING A LABEL FROM LEFT TO RIGHT ETC
+
+
+//  override func viewDidLoad() {
+//  super.viewDidLoad()
+
+
+//        let label = UILabel(frame: CGRectMake(self.view.bounds.width / 2 - 100, self.view.bounds.height / 2 - 50, 200, 100))
+//        label.text = "Drag me!"
+//        label.textAlignment = NSTextAlignment.Center
+//        self.view.addSubview(label)
+//
+//        let gesture = UIPanGestureRecognizer(target: self, action: Selector("wasDragged:"))
+//        label.addGestureRecognizer(gesture)
+//
+//        label.userInteractionEnabled = true
+
+// }
+
+
+//    func wasDragged(gesture: UIPanGestureRecognizer) {
+//
+//        let translation = gesture.translationInView(self.view)
+//        let label = gesture.view!
+//
+//        label.center = CGPoint(x: self.view.bounds.width / 2 + translation.x, y: self.view.bounds.height / 2 + translation.y)
+//
+//        let xFromCenter = label.center.x - self.view.bounds.width / 2
+//
+//        let scale = min(100 / abs(xFromCenter), 1)
+//
+//        var rotation = CGAffineTransformMakeRotation(xFromCenter / 200)
+//
+//        var stretch = CGAffineTransformScale(rotation, scale, scale)
+//
+//        label.transform = stretch
+//
+//
+//
+//        if gesture.state == UIGestureRecognizerState.Ended {
+//
+//            if label.center.x < 100 {
+//
+//                print("nope")
+//
+//            } else if label.center.x > self.view.bounds.width - 100 {
+//
+//                print("deep inside")
+//
+//            }
+//
+//            rotation = CGAffineTransformMakeRotation(0)
+//
+//            stretch = CGAffineTransformScale(rotation, 1, 1)
+//
+//            label.transform = stretch
+//
+//            label.center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height / 2)
+//
+//        }
+//
+//
+//    }
+
+
+

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
-		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
 		81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
 		81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816B1A49DB6800E65899 /* Bolts.framework */; };
@@ -16,7 +15,9 @@
 		81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81781A49E0DB00E65899 /* AudioToolbox.framework */; };
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
-		D0CC3B771CD8A9B900B9DF6F /* manualAddUsersPlaceholder in Resources */ = {isa = PBXBuildFile; fileRef = D0CC3B761CD8A9B900B9DF6F /* manualAddUsersPlaceholder */; };
+		D0CC3B771CD8A9B900B9DF6F /* Unused Code in Resources */ = {isa = PBXBuildFile; fileRef = D0CC3B761CD8A9B900B9DF6F /* Unused Code */; };
+		D0CC3B7A1CD8ABC500B9DF6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
+		D0CC3B7C1CD8AD8A00B9DF6F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0CC3B7B1CD8AD8A00B9DF6F /* Media.xcassets */; };
 		D0E6E1B91CD630A9005526AF /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E6E1B81CD630A9005526AF /* FBSDKCoreKit.framework */; };
 		D0E6E1BB1CD630BF005526AF /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E6E1BA1CD630BF005526AF /* FBSDKLoginKit.framework */; };
 		D0E6E1BF1CD6330D005526AF /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E6E1BE1CD6330D005526AF /* ParseFacebookUtilsV4.framework */; };
@@ -32,7 +33,7 @@
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81BA81451A49DA1800E65899 /* ParseStarterProject-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParseStarterProject-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BA81451A49DA1800E65899 /* Gymbuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gymbuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA814A1A49DA1800E65899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81BA814C1A49DA1800E65899 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81BA816B1A49DB6800E65899 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -40,7 +41,8 @@
 		81BA81781A49E0DB00E65899 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
-		D0CC3B761CD8A9B900B9DF6F /* manualAddUsersPlaceholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = manualAddUsersPlaceholder; sourceTree = "<group>"; };
+		D0CC3B761CD8A9B900B9DF6F /* Unused Code */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Unused Code"; sourceTree = "<group>"; };
+		D0CC3B7B1CD8AD8A00B9DF6F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../Desktop/ffs/Media.xcassets; sourceTree = "<group>"; };
 		D0E6E1B81CD630A9005526AF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		D0E6E1BA1CD630BF005526AF /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		D0E6E1BE1CD6330D005526AF /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		81BA813C1A49DA1800E65899 = {
 			isa = PBXGroup;
 			children = (
+				D0CC3B7B1CD8AD8A00B9DF6F /* Media.xcassets */,
 				D0E6E1D01CD6509F005526AF /* LaunchScreen.storyboard */,
 				81BA81471A49DA1800E65899 /* ParseStarterProject */,
 				814C3AC51B69877600E307BB /* Resources */,
@@ -97,7 +100,7 @@
 		81BA81461A49DA1800E65899 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81BA81451A49DA1800E65899 /* ParseStarterProject-Swift.app */,
+				81BA81451A49DA1800E65899 /* Gymbuddy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +115,7 @@
 				D0E6E1CD1CD63F20005526AF /* ParseStarterProject-Swift-Bridging-Header.h */,
 				D0E6E1D21CD6B867005526AF /* bikeman.png */,
 				D0E6E1D81CD6BB5F005526AF /* fbSignIn.png */,
-				D0CC3B761CD8A9B900B9DF6F /* manualAddUsersPlaceholder */,
+				D0CC3B761CD8A9B900B9DF6F /* Unused Code */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -145,9 +148,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		81BA81441A49DA1800E65899 /* ParseStarterProject-Swift */ = {
+		81BA81441A49DA1800E65899 /* Gymbuddy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "ParseStarterProject-Swift" */;
+			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Gymbuddy" */;
 			buildPhases = (
 				81BA81411A49DA1800E65899 /* Sources */,
 				81BA81421A49DA1800E65899 /* Frameworks */,
@@ -157,9 +160,9 @@
 			);
 			dependencies = (
 			);
-			name = "ParseStarterProject-Swift";
+			name = Gymbuddy;
 			productName = ParseStarterProject;
-			productReference = 81BA81451A49DA1800E65899 /* ParseStarterProject-Swift.app */;
+			productReference = 81BA81451A49DA1800E65899 /* Gymbuddy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "ParseStarterProject-Swift" */;
+			buildConfigurationList = 81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "Gymbuddy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -190,7 +193,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81BA81441A49DA1800E65899 /* ParseStarterProject-Swift */,
+				81BA81441A49DA1800E65899 /* Gymbuddy */,
 			);
 		};
 /* End PBXProject section */
@@ -201,11 +204,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E6E1D91CD6BB5F005526AF /* fbSignIn.png in Resources */,
-				D0CC3B771CD8A9B900B9DF6F /* manualAddUsersPlaceholder in Resources */,
+				D0CC3B7A1CD8ABC500B9DF6F /* Images.xcassets in Resources */,
+				D0CC3B7C1CD8AD8A00B9DF6F /* Media.xcassets in Resources */,
+				D0CC3B771CD8A9B900B9DF6F /* Unused Code in Resources */,
 				D0E6E1D11CD6509F005526AF /* LaunchScreen.storyboard in Resources */,
 				D0E6E1D31CD6B867005526AF /* bikeman.png in Resources */,
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
-				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +333,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gymbuddy;
-				PRODUCT_NAME = "ParseStarterProject-Swift";
+				PRODUCT_NAME = Gymbuddy;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/brandonhardy/Documents/gymbuddy/ParseStarterProject/ParseStarterProject-Swift-Bridging-Header.h";
 			};
 			name = Debug;
@@ -347,7 +351,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gymbuddy;
-				PRODUCT_NAME = "ParseStarterProject-Swift";
+				PRODUCT_NAME = Gymbuddy;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/brandonhardy/Documents/gymbuddy/ParseStarterProject/ParseStarterProject-Swift-Bridging-Header.h";
 			};
 			name = Release;
@@ -355,7 +359,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "ParseStarterProject-Swift" */ = {
+		81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "Gymbuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81BA81621A49DA1800E65899 /* Debug */,
@@ -364,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "ParseStarterProject-Swift" */ = {
+		81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Gymbuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81BA81651A49DA1800E65899 /* Debug */,
