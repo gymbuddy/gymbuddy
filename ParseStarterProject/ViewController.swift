@@ -7,8 +7,8 @@ import FBSDKLoginKit
 class ViewController: UIViewController {
 
     @IBAction func fbLogin(sender: AnyObject) {
-        
-        let permissions = ["public_profile"]
+    
+        let permissions = ["public_profile", "email"]
         
         PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions, block: { (user: PFUser?, error: NSError?) -> Void in
             

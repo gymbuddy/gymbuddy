@@ -14,7 +14,11 @@ class SignUpViewController: UIViewController {
     @IBOutlet var interestedInFemale: UISwitch!
     
     @IBAction func logOut(sender: AnyObject) {
+        PFUser.logOut()
+        performSegueWithIdentifier("logOut", sender: self)
+        
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,12 +30,7 @@ class SignUpViewController: UIViewController {
             } else if let result = results {
                 PFUser.currentUser()?["gender"] = result["gender"]!
                 PFUser.currentUser()?["name"] = result["name"]!
-                
-                do {
-                    try PFUser.currentUser()?.save()
-                } catch let ex {
-                    print(ex)
-                }
+                PFUser.currentUser()?["email"] = result["email"]!
                 
                 let userId = result["id"]! as! String
                 let facebookProfilePictureUrl = "https://graph.facebook.com/" + userId + "/picture?type=large"
@@ -50,11 +49,10 @@ class SignUpViewController: UIViewController {
             }
         }
 
-    }
-
+        }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-
 }

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -133,9 +134,12 @@
                                     <action selector="signUp:" destination="b6C-3w-qPb" eventType="touchUpInside" id="G0A-3l-Egc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUA-DQ-HWT">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUA-DQ-HWT">
                                 <rect key="frame" x="530" y="550" width="55" height="30"/>
-                                <state key="normal" title="Log Out"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="logOut:" destination="b6C-3w-qPb" eventType="touchUpInside" id="YMd-Uy-AYN"/>
                                 </connections>
@@ -158,12 +162,15 @@
                             <constraint firstItem="4pe-7A-sJf" firstAttribute="centerX" secondItem="ZSg-Lv-ddR" secondAttribute="centerX" id="hy4-ph-AKj"/>
                             <constraint firstItem="aAe-1O-tYK" firstAttribute="top" secondItem="Ant-Hu-7mV" secondAttribute="bottom" constant="135" id="ikM-aT-inY"/>
                             <constraint firstItem="4pe-7A-sJf" firstAttribute="centerX" secondItem="NR7-pc-2H9" secondAttribute="centerX" id="qUS-Og-zVi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RUA-DQ-HWT" secondAttribute="trailing" constant="-5" id="tEF-V8-vhF"/>
+                            <constraint firstAttribute="bottom" secondItem="RUA-DQ-HWT" secondAttribute="bottom" constant="20" symbolic="YES" id="tO9-0t-Ji1"/>
                             <constraint firstItem="6d9-kz-MdI" firstAttribute="leading" secondItem="kLb-yL-QXJ" secondAttribute="trailing" constant="17" id="uOx-V7-dLY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="interestedInFemale" destination="kLb-yL-QXJ" id="x4v-Ny-P5K"/>
                         <outlet property="userImage" destination="NR7-pc-2H9" id="nQl-SO-nW4"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="logOut" id="YGr-WY-xUu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7D-Gg-dke" userLabel="First Responder" sceneMemberID="firstResponder"/>
